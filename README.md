@@ -6,6 +6,10 @@
 
 基于阿里云百炼（DashScope）大模型 API 构建，前端 React + Ant Design，后端 FastAPI + MySQL + Chroma。
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Gitee Stars](https://gitee.com/wmy221/faq-smart-ai-assistant/badge/star.svg)](https://gitee.com/wmy221/faq-smart-ai-assistant)
+[![Gitee Forks](https://gitee.com/wmy221/faq-smart-ai-assistant/badge/fork.svg)](https://gitee.com/wmy221/faq-smart-ai-assistant)
+
 </div>
 
 ## 功能特性
