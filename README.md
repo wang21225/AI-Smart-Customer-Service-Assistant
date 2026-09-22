@@ -12,6 +12,22 @@
 
 </div>
 
+## 界面预览
+
+| 智能客服对话 | 运营数据看板 |
+| --- | --- |
+| ![智能客服对话](docs/screenshots/chat.png) | ![运营数据看板](docs/screenshots/dashboard.png) |
+
+| 知识库管理 | RAG 检索测试 |
+| --- | --- |
+| ![知识库管理](docs/screenshots/knowledge.png) | ![RAG 检索测试](docs/screenshots/retrieval.png) |
+
+| 客服工单 |
+| --- |
+| ![客服工单](docs/screenshots/tickets.png) |
+
+> 截图来自本地演示环境（未配置大模型 API Key），主要展示完整的前后端交互与数据闭环。
+
 ## 功能特性
 
 - **流式对话**：基于 SSE 的流式回复，打字机效果，支持 Markdown 渲染
