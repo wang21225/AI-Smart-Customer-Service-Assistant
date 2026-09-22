@@ -1,0 +1,30 @@
+{
+  "name": "ai-customer-service-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons": "5.6.1",
+    "@vitejs/plugin-react": "4.6.0",
+    "antd": "5.26.6",
+    "axios": "1.10.0",
+    "echarts": "5.6.0",
+    "echarts-for-react": "3.0.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-markdown": "10.1.0",
+    "react-router-dom": "7.7.0",
+    "zustand": "5.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "typescript": "5.8.3",
+    "vite": "7.0.5"
+  }
+}

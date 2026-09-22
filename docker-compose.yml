@@ -1,0 +1,20 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: ai_customer_service_mysql
+    environment:
+      # 仅用于本地开发环境的默认密码，生产环境请修改
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_DATABASE: ai_customer_service
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/scripts/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+
+volumes:
+  mysql_data:
