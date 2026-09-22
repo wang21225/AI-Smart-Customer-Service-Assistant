@@ -1,82 +1,114 @@
-# AI 智能客服系统
+<p align="center">
+  <span style="font-size: 42px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(135deg, #6366f1, #8b5cf6); -webkit-background-clip: text; background-clip: text; color: transparent;">AI 智能客服系统</span>
+</p>
+
+<p align="center">
+  <span style="color: #6b7280; font-size: 16px;">前后端分离 · 多智能体工作流 · RAG 知识库 · SSE 流式对话</span>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://gitee.com/wmy221/faq-smart-ai-assistant"><img src="https://gitee.com/wmy221/faq-smart-ai-assistant/badge/star.svg" alt="Star"></a>
+  <a href="https://gitee.com/wmy221/faq-smart-ai-assistant"><img src="https://gitee.com/wmy221/faq-smart-ai-assistant/badge/fork.svg" alt="Fork"></a>
+</p>
+
+<p align="center" style="color: #9ca3af; font-size: 14px;">
+  基于阿里云百炼（DashScope）大模型构建：React + Ant Design 前端 · FastAPI 后端 · MySQL + Chroma 数据层
+</p>
+
+---
+
+## 功能亮点
 
 <div align="center">
 
-一个前后端分离的 AI 智能客服应用，集成 **LangGraph 多智能体工作流**、**RAG 知识库问答**、**SSE 流式对话** 与 **业务工单闭环**。
-
-基于阿里云百炼（DashScope）大模型 API 构建，前端 React + Ant Design，后端 FastAPI + MySQL + Chroma。
-
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Gitee Stars](https://gitee.com/wmy221/faq-smart-ai-assistant/badge/star.svg)](https://gitee.com/wmy221/faq-smart-ai-assistant)
-[![Gitee Forks](https://gitee.com/wmy221/faq-smart-ai-assistant/badge/fork.svg)](https://gitee.com/wmy221/faq-smart-ai-assistant)
+| | | |
+| :---: | :---: | :---: |
+| <div style="width:240px;height:110px;padding:20px;border-radius:14px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);text-align:left"><b>多智能体工作流</b><br><span style="color:#6b7280;font-size:13px;line-height:1.7">LangGraph 有向状态图：意图识别 → 路由 → 多轮工具调用 → 流式生成</span></div> | <div style="width:240px;height:110px;padding:20px;border-radius:14px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);text-align:left"><b>RAG 知识库问答</b><br><span style="color:#6b7280;font-size:13px;line-height:1.7">文档切分 → Embedding 入库 → 混合检索，回答附带可追溯的知识来源</span></div> | <div style="width:240px;height:110px;padding:20px;border-radius:14px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);text-align:left"><b>SSE 流式对话</b><br><span style="color:#6b7280;font-size:13px;line-height:1.7">打字机式流式回复，支持 Markdown 渲染与对话点赞 / 点踩反馈</span></div> |
+| <div style="width:240px;height:110px;padding:20px;border-radius:14px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);text-align:left"><b>业务工单闭环</b><br><span style="color:#6b7280;font-size:13px;line-height:1.7">会话中直接查询订单，一键创建售后工单，转人工无缝衔接</span></div> | <div style="width:240px;height:110px;padding:20px;border-radius:14px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);text-align:left"><b>运营数据看板</b><br><span style="color:#6b7280;font-size:13px;line-height:1.7">会话趋势、意图分布、知识命中 Top 实时统计（ECharts）</span></div> | <div style="width:240px;height:110px;padding:20px;border-radius:14px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);text-align:left"><b>一键开箱体验</b><br><span style="color:#6b7280;font-size:13px;line-height:1.7">启动自动建表并写入演示数据（商品 / FAQ / 工单），无需手动初始化</span></div> |
 
 </div>
 
+---
+
 ## 界面预览
 
+<div align="center">
+
 | 智能客服对话 | 运营数据看板 |
-| --- | --- |
-| ![智能客服对话](docs/screenshots/chat.png) | ![运营数据看板](docs/screenshots/dashboard.png) |
+| :---: | :---: |
+| <img src="docs/screenshots/chat.png" width="540"> | <img src="docs/screenshots/dashboard.png" width="540"> |
 
 | 知识库管理 | RAG 检索测试 |
-| --- | --- |
-| ![知识库管理](docs/screenshots/knowledge.png) | ![RAG 检索测试](docs/screenshots/retrieval.png) |
+| :---: | :---: |
+| <img src="docs/screenshots/knowledge.png" width="540"> | <img src="docs/screenshots/retrieval.png" width="540"> |
 
 | 客服工单 |
-| --- |
-| ![客服工单](docs/screenshots/tickets.png) |
+| :---: |
+| <img src="docs/screenshots/tickets.png" width="540"> |
 
-> 截图来自本地演示环境（未配置大模型 API Key），主要展示完整的前后端交互与数据闭环。
+</div>
 
-## 功能特性
+> 截图来自本地演示环境（未配置大模型 API Key），展示完整的前后端交互与数据闭环。
 
-- **流式对话**：基于 SSE 的流式回复，打字机效果，支持 Markdown 渲染
-- **意图识别**：基于 LLM 的意图分类，自动路由到商品咨询 / 订单查询 / 售后工单 / 闲聊等场景
-- **RAG 知识库问答**：支持上传文档（PDF / Word / Excel / Markdown / TXT），自动完成切分、向量化与语义检索，回答附带可追溯的知识来源
-- **业务闭环**：客服会话中可直接查询订单、价格，一键生成售后工单
-- **运营后台**：会话管理、知识库管理、工单处理、检索测试、数据看板（趋势图 / 意图分布 / 知识命中 Top）
-- **对话反馈**：支持对回答点赞 / 点踩，便于迭代优化
+---
 
 ## 技术栈
 
+<div align="center">
+
 | 端 | 技术 |
-| --- | --- |
-| 前端 | React 19 · TypeScript · Vite 7 · Ant Design 5 · Zustand · ECharts · react-markdown |
-| 后端 | Python 3.12 · FastAPI · SQLAlchemy 2 · LangGraph · LangChain · Chroma · SSE |
-| 数据 | MySQL 8.4（业务数据） · Chroma（向量索引） · 文件存储（知识库文档） |
-| 模型 | 阿里云百炼：qwen-plus（对话） · qwen-turbo（意图） · text-embedding-v3（向量） |
+| :---: | :--- |
+| 前端 | <span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:13px;">React 19</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:13px;">TypeScript</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:13px;">Vite 7</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:13px;">Ant Design 5</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:13px;">Zustand</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:13px;">ECharts</span> |
+| 后端 | <span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#f5f3ff;color:#5b21b6;font-size:13px;">Python 3.12</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#f5f3ff;color:#5b21b6;font-size:13px;">FastAPI</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#f5f3ff;color:#5b21b6;font-size:13px;">SQLAlchemy 2</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#f5f3ff;color:#5b21b6;font-size:13px;">LangGraph</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#f5f3ff;color:#5b21b6;font-size:13px;">LangChain</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#f5f3ff;color:#5b21b6;font-size:13px;">Chroma</span> |
+| 数据 | <span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#ecfdf5;color:#065f46;font-size:13px;">MySQL 8.4</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#ecfdf5;color:#065f46;font-size:13px;">Chroma 向量库</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#ecfdf5;color:#065f46;font-size:13px;">文件存储</span> |
+| 模型 | <span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#fff7ed;color:#9a3412;font-size:13px;">qwen-plus 对话</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#fff7ed;color:#9a3412;font-size:13px;">qwen-turbo 意图</span><span style="display:inline-block;padding:2px 10px;margin:2px;border-radius:999px;background:#fff7ed;color:#9a3412;font-size:13px;">text-embedding-v3 向量</span> |
+
+</div>
+
+---
 
 ## 核心架构
 
-```
-┌───────────────────────────────┐
-│            React 前端           │  管理后台 + 聊天界面
-└──────────────┬────────────────┘
-               │ HTTP / SSE
-┌──────────────▼────────────────┐
-│   FastAPI（backend/app/api）   │  路由层：REST + 流式
-└──────────────┬────────────────┘
-┌──────────────▼────────────────┐
-│        LangGraph 工作流         │  intent 识别 → 路由 → 工具调用
-│   graphs/customer_service_graph │  → 大模型流式生成
-└───────┬──────────────┬────────┘
-        │              │
-┌───────▼────────┐  ┌──▼──────────────────────┐
-│  RAG 流水线      │  │   业务服务 / 工具         │
-│  loader→splitter│  │   tools/business_tools   │
-│  →embedding     │  │   订单查询 · 工单创建      │
-│  →Chroma 检索    │  └──┬──────────────┬───────┘
-└───────┬────────┘     │              │
-        │              │              │
-  ┌─────▼──────────┐  ┌▼─────────────▼───────┐
-  │   DashScope    │  │  MySQL + 文件存储      │
-  │  (LLM/Embedding)│  │  会话/工单/知识库/统计  │
-  └────────────────┘  └──────────────────────┘
-```
+<div align="center">
+
+<span style="display:inline-block;padding:12px 28px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);font-weight:600;">React 前端 <span style="color:#9ca3af;font-weight:400;">管理后台 + 聊天界面</span></span>
+
+<span style="color:#a5b4fc;font-size:18px;">▼</span><br/>
+<span style="color:#9ca3af;font-size:12px;">HTTP / SSE</span>
+
+<span style="display:inline-block;padding:12px 28px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);font-weight:600;">FastAPI <span style="color:#9ca3af;font-weight:400;">路由层：REST + 流式</span></span>
+
+<span style="color:#a5b4fc;font-size:18px;">▼</span><br/>
+<span style="color:#9ca3af;font-size:12px;">状态流转</span>
+
+<span style="display:inline-block;padding:12px 28px;border-radius:12px;border:1px solid #c7d2fe;background:#eef2ff;box-shadow:0 1px 3px rgba(0,0,0,.06);font-weight:700;color:#3730a3;">LangGraph 客服工作流</span>
+
+<span style="color:#a5b4fc;font-size:18px;">▼</span><br/>
+<span style="color:#9ca3af;font-size:12px;">结果分流</span>
+
+<table><tr>
+<td width="50%" align="center"><span style="display:inline-block;padding:12px 20px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);"><b>RAG 流水线</b><br><span style="color:#6b7280;font-size:12px;">加载 → 切分 → Embedding → Chroma 检索</span></span></td>
+<td width="50%" align="center"><span style="display:inline-block;padding:12px 20px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.06);"><b>业务工具</b><br><span style="color:#6b7280;font-size:12px;">订单查询 · 工单创建</span></span></td>
+</tr></table>
+
+<span style="color:#a5b4fc;font-size:18px;">▼</span>
+
+<table><tr>
+<td width="50%" align="center"><span style="display:inline-block;padding:12px 20px;border-radius:12px;border:1px solid #fde68a;background:#fffbeb;box-shadow:0 1px 3px rgba(0,0,0,.06);font-weight:600;">DashScope 大模型<br><span style="color:#9a3412;font-size:12px;font-weight:400;">LLM / Embedding</span></span></td>
+<td width="50%" align="center"><span style="display:inline-block;padding:12px 20px;border-radius:12px;border:1px solid #a7f3d0;background:#ecfdf5;box-shadow:0 1px 3px rgba(0,0,0,.06);font-weight:600;">MySQL + 文件存储<br><span style="color:#065f46;font-size:12px;font-weight:400;">会话 / 工单 / 知识库 / 统计</span></span></td>
+</tr></table>
+
+</div>
 
 后端采用分层架构：`app/api`（路由）→ `app/services`（业务）→ `app/repositories`（数据访问）→ `app/models`（ORM 模型），另含 `app/core`（配置 / 中间件 / 异常 / 响应）、`app/rag`（RAG 流水线）、`app/graphs`（LangGraph 状态机）、`app/agents`（大模型封装）。
 
+---
+
 ## 项目结构
+
+<details>
+<summary>查看目录结构</summary>
 
 ```
 ai-chat/
@@ -107,21 +139,19 @@ ai-chat/
 └── README.md
 ```
 
+</details>
+
+---
+
 ## 快速开始
 
-### 前置要求
-
-- Docker（启动 MySQL 8.4）
-- Python 3.12+
-- Node.js 18+ 与 npm（或 pnpm）
-
-### 1. 启动 MySQL
+#### 1 · 启动 MySQL
 
 ```bash
 docker compose up -d mysql
 ```
 
-### 2. 启动后端
+#### 2 · 启动后端
 
 ```bash
 cd backend
@@ -134,7 +164,7 @@ uvicorn app.main:app --reload --port 8000
 
 应用启动时会自动建表并写入演示数据（四类商品、FAQ、示例工单），便于直接体验。
 
-### 3. 启动前端
+#### 3 · 启动前端
 
 ```bash
 cd frontend
@@ -142,13 +172,15 @@ npm install
 npm run dev
 ```
 
-### 4. 访问
+#### 4 · 访问
 
 | 服务 | 地址 |
 | --- | --- |
 | 前端应用 | http://localhost:5173 |
 | 后端接口 | http://localhost:8000 |
 | API 文档（Swagger） | http://localhost:8000/docs |
+
+---
 
 ## 配置说明
 
@@ -173,6 +205,8 @@ EMBEDDING_MODEL=text-embedding-v3  # 向量模型
 
 未配置 API Key 时，系统仍可正常运行：数据库、会话、知识库、工单、统计等本地流程完整可用，大模型回答会返回明确的配置提示。
 
+---
+
 ## 核心 API
 
 | 方法 | 路径 | 说明 |
@@ -188,12 +222,16 @@ EMBEDDING_MODEL=text-embedding-v3  # 向量模型
 | GET | `/api/dashboard/statistics` | 运营数据统计 |
 | GET | `/health` | 健康检查 |
 
+---
+
 ## 工程亮点
 
 - **LangGraph 状态机工作流**：客服对话被建模为有向状态图，意图识别 → 路由 → 多轮工具调用 → 流式生成，状态贯穿全程
 - **标准 RAG 流水线**：文档加载（PDF/Word/Excel/Markdown）→ 文本切分 → Embedding 入库 → BM25 + 向量混合检索 → 来源引用
 - **前后端深度集成**：SSE 流式解析、会话级状态管理（Zustand）、请求 ID 中间件与统一响应体
 - **工程化细节**：统一异常处理、结构化日志、CORS 配置、自动建表与演示数据、一键环境脚本、冒烟测试
+
+---
 
 ## 测试
 
@@ -202,6 +240,8 @@ cd backend
 pytest tests/
 ```
 
-## License
+---
 
-[MIT](LICENSE)
+<p align="center" style="color:#9ca3af; font-size: 13px;">
+  MIT License · 由 <a href="https://gitee.com/wmy221/faq-smart-ai-assistant">Gitee</a> 托管
+</p>
