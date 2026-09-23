@@ -300,5 +300,5 @@ pytest tests/
 ---
 
 <p align="center">
-  <sub>MIT License · 同步托管于 <a href="https://github.com/wang21225/AI-">GitHub</a> 与 <a href="https://gitee.com/wmy221/faq-smart-ai-assistant">Gitee</a></sub>
+  <sub>MIT License · 同步托管于 <a href="https://github.com/wang21225/AI-Smart-Customer-Service-Assistant">GitHub</a> 与 <a href="https://gitee.com/wmy221/faq-smart-ai-assistant">Gitee</a></sub>
 </p>

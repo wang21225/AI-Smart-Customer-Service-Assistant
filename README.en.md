@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/wang21225/AI-"><img src="https://img.shields.io/github/stars/wang21225/AI-?style=for-the-badge&logo=github&logoColor=white&label=GitHub" alt="GitHub Stars"></a>
+  <a href="https://github.com/wang21225/AI-Smart-Customer-Service-Assistant"><img src="https://img.shields.io/github/stars/wang21225/AI-Smart-Customer-Service-Assistant?style=for-the-badge&logo=github&logoColor=white&label=GitHub" alt="GitHub Stars"></a>
   <a href="https://gitee.com/wmy221/faq-smart-ai-assistant"><img src="https://gitee.com/wmy221/faq-smart-ai-assistant/badge/star.svg?theme=dark" alt="Gitee Star"></a>
 </p>
 
@@ -300,5 +300,5 @@ pytest tests/
 ---
 
 <p align="center">
-  <sub>MIT License · Mirrored on <a href="https://github.com/wang21225/AI-">GitHub</a> & <a href="https://gitee.com/wmy221/faq-smart-ai-assistant">Gitee</a></sub>
+  <sub>MIT License · Mirrored on <a href="https://github.com/wang21225/AI-Smart-Customer-Service-Assistant">GitHub</a> & <a href="https://gitee.com/wmy221/faq-smart-ai-assistant">Gitee</a></sub>
 </p>
