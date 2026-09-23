@@ -1,3 +1,7 @@
+<p align="center">
+  <b>简体中文</b> · <a href="README.en.md">English</a>
+</p>
+
 <h1 align="center">AI 智能客服系统</h1>
 
 <p align="center">
@@ -296,5 +300,5 @@ pytest tests/
 ---
 
 <p align="center">
-  <sub>MIT License · 由 <a href="https://gitee.com/wmy221/faq-smart-ai-assistant">Gitee</a> 托管</sub>
+  <sub>MIT License · 同步托管于 <a href="https://github.com/wang21225/AI-">GitHub</a> 与 <a href="https://gitee.com/wmy221/faq-smart-ai-assistant">Gitee</a></sub>
 </p>
